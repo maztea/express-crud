@@ -35,7 +35,7 @@ const save = (obj) => {
 const remove = (id) => {    
     let index = customers.map(x => {
         return x.id
-    }).indexOf(id);
+    }).indexOf(parseInt(id));
 
     customers.splice(index,1);
     return 'data removed!';
